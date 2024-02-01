@@ -1,0 +1,187 @@
+body{
+    background-color: #000;
+    font-family: 'DM Sans', sans-serif;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+p, h1, h2 {
+    color: #fff;
+}
+
+/* Menu lateral */
+
+.container{
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 300px;
+}
+
+.menu__navigation {
+    background-color: #121212;
+    padding: 16px 0 0 16px;
+}
+
+.logo {
+    background: #121212;
+    display: flex;
+    border: 0;
+    margin: 0;
+    padding: 16px 0 0 16px;
+    align-items: center;
+}
+
+.menu__navigation .logo img {
+    width: 250px;
+}
+
+.menu nav ul{
+    margin-top: 20px;
+    padding: 0px 20px 10px 20px;
+}
+
+.menu ul li{
+    padding: 10px 0;
+}
+
+.menu nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu nav ul li{
+    transition: transform 200ms ease-in-out;
+    position: relative;
+}
+
+.menu nav ul li:hover {
+    transform: scale(1.05); 
+}
+
+.menu nav ul li::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+/*Conteúdo central da página dando boas vindas ao cliente. Em breve utilizar o js para identificar o horário local e saudar de acordo com o período: dia, tarde, noite*/
+
+.conteudo__index{
+    position: absolute;
+    top: 100px;
+    left: 350px;
+}
+
+.conteudo__index .text__principal{
+    top: 220px;
+    left: 330px;
+    padding: 0 200 0 450px;
+}
+
+/*Conteudo do h2 e botão da página inicial*/
+
+.agendamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; 
+    margin-bottom: 120px;
+}
+
+.agendar__text h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.agendar {
+    margin-top: 40px; 
+    text-align: center;
+}
+
+.botao__agendar {
+    background-color: #fff; 
+    color: #000;
+    padding: 15px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.botao__agendar{
+    transition: transform 200ms ease-in-out;
+}
+
+.botao__agendar:hover {
+    transform: scale(1.05);
+}
+
+/*Estilizando o footer e seus botões*/
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to right, #fff, #000 );
+    z-index: 1;
+}
+
+.infos .social__info a{
+    color: #fff;
+}
+
+.infos .social__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.infos .social__info img{
+    width: 20%;
+}
+
+.infos .social__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos .social__info a:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+

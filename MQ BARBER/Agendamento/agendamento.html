@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+    
+        <meta charset="UTF-8">
+
+        <!--Meta dados para ajuste do layout em dispositivos móveis-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MQ BARBER</title>
+        
+        <!--Adicionando imagem ao title-->
+        <link rel="icon" href="../src/imagens/MAIQUE BARBER 3.png">
+
+		<!--Adicionando fonte-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+        <!--Adicionando o css ao documento-->
+        <link rel="stylesheet" href="../src/styles/reset.css">
+        <link rel="stylesheet" href="../src/styles/style_index.css">
+		<link rel="stylesheet" href="../src/styles/style_agendamento.css">
+
+        <!--Importei uma cdn para carregar alguns ícones do menu lateral-->
+        <script src="https://kit.fontawesome.com/92684328ce.js" crossorigin="anonymous"></script>
+    
+    </head>				  
+
+<body> 
+
+	<!--Criação do Menu lateral com os botões de navegação pelo site-->
+	<div class="menu">
+		<nav class="menu__navigation">
+			<div class="logo">
+				<a href="../index.html">
+					<img src="../src/imagens/MAIQUE BARBER 7.png" alt="logo maique barber">
+				</a>
+			</div>
+			<ul>
+				<li>
+					<!--Exemplo de uso da cdn, o botão home-->
+					<a href="../index.html">
+						<span class="fa fa-home"></span>
+						<span>Início</span>
+					</a>
+				</li>
+				<li>
+					<a href="../Serviços/serviços.html">
+						<span class="fa-solid fa-scissors"></span>
+						<span>Serviços</span>
+					</a>
+				</li>
+				<li>
+					<a href="../Agendamento/agendamento.html">
+						<span class="fa-solid fa-clock"></span>
+						<span>Agende um horário</span>
+					</a>
+				</li>
+				<li>
+					<a href="../Contato/contato.html">
+						<span class="fa-brands fa-whatsapp"></span>
+						<span>Entre em contato</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+            
+			<div class="agendamento">
+				<div class="agendamento__title">
+					<h2> Agendamento de serviço </h2>
+				</div>
+								
+				<div class="agendamento__tabela">
+					<form>
+	                    <Label class="tabela__nome"> <b>Nome</b> <br>
+	                	    <input type="text" name="nome" placeholder="Digite seu nome" required>
+	                        </Label> <br>
+			                <br>
+								
+						<Label> <b>Selecione um barbeiro</b> <br>
+							<select name="Barbeiro" required>
+								<option> Barbeiro </option>
+								<option value="Maique Deimisson"> Maique Deimisson </option>
+								<option value="Jefferson Santos"> Jefferson Santos </option>
+								<option value="Nestor Gabriel"> Nestor Gabriel </option>
+								<option value="Gabriel Santos"> Gabriel Santos </option>
+							</select>
+						</Label> <br>
+						<br>
+								
+								
+						<Label> <b> Selecione um dia e horário </b> <br>
+							<input type="date">
+								<select name="Dia e horário" required>
+								<option> Horário </option>
+								<option value="Seg-Sex Manhã"> Manhã </option>
+								<option value="Seg-Sex Tarde"> Tarde </option>
+								</select>
+						</Label> <br>
+						<br>
+
+						<label for=""> <b>Selecione o serviço</b> <br>
+							<select name="Serviço" required>
+								<option value="">Serviço</option>
+								<option value="Corte Social">Corte Social</option>
+								<option value="Corte Navalhado">Corte Navalhado</option>
+								<option value="Corte Tesoura">Corte Tesoura</option>
+								<option value="Barba">Barba</option>
+								<option value="Sobrancelha">Sobrancelha</option>
+								<option value="Corte e Barba">Corte e Barba</option>
+								<option value="Pezinho">Pezinho</option>
+							</select>
+						</label> <br>
+						<br>		
+
+						<label class="valor"> <b>Valor Total</b> <br>
+							<input type="text" name="valor total" placeholder="R$0,00">
+						</label> <br>
+						<br>
+						
+						<Label class="pagamento"> <b> Selecione a forma de pagamento </b> <br>
+								<input type="radio" name="op" value="P" required> Pix
+								<input type="radio" name="op" value="D/C" required> Débito ou Crédito
+								<input type="radio" name="op" value="E" required> Espécie
+						</Label> <br>
+						<br>
+							
+						<button class="botao__confirma" type="submit"> <b> Agendar agora </b> </button>
+						<button class="botao__limpar" type="reset"> <b> Limpar </b> </button>
+
+						<script type="text/javascript" src="../script.js"></script>
+
+				</div>
+			</div>	
+
+		<!-- Criação do footer, com a logo da empresa e links para contato -->
+		<footer class="infos">
+			<div class="social__info">
+				<img src="../src/imagens/MAIQUE BARBER.png" alt="logo maique barber">
+				<a href="https://www.instagram.com/maique_barber99/" target="_blank">
+					<span class="fa-brands fa-instagram"></span>
+				</a>
+				<a href="https://api.whatsapp.com/send?phone=5571983410546" target="_blank">
+					<span class="fa-brands fa-whatsapp"></span>
+				</a>
+				<a href="https://www.google.com.br/maps/place/R.+Luis+Martins+Catharino+Gordilho,+77+-+Fazenda+Grande+3,+Salvador+-+BA,+41343-305/@-12.903244,-38.394896,19z/data=!3m1!4b1!4m5!3m4!1s0x71616d6b38ac7d9:0x36b1bea98ee7b113!8m2!3d-12.903244!4d-38.3942523?entry=ttu" target="_blank">
+					<span class="fa-solid fa-location-dot"></span>
+				</a>
+			</div>
+		</footer>		
+
+</body>
+</html>
